@@ -18,11 +18,6 @@ header h1 {
   margin: 0;
 }
 
-header h1 {
-  margin: 0;
-  text-align: center;
-}
-
 header nav ul {
   list-style: none;
   padding: 0;
@@ -35,7 +30,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #fff;
-  text-decoration: center;
+  text-decoration: none;
 }
 
 .container {
@@ -56,7 +51,7 @@ main {
 }
 
 .product {
-  width: calc(20% - 20px); /* عرض هر محصول 25% از والد به‌علاوه فاصله */
+  width: calc(25% - 20px); /* عرض هر محصول 25% از والد به‌علاوه فاصله */
   max-width: 300px; /* حداکثر عرض برای محصولات */
   background: #fff;
   border: 1px solid #ddd;
@@ -103,4 +98,17 @@ form input, form textarea {
 
 form button {
   width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px); /* هر محصول در موبایل 50% عرض دارد */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%; /* هر محصول در موبایل کوچک تمام عرض را می‌گیرد */
+  }
 }
